@@ -27,15 +27,19 @@ public class trastes {
     tamaño = "pequeño";
     }
 
-    public trastes(String forma, String tamaño) {
+    public trastes(String forma, String color, double profundidad_cm, String resistencia, String tamaño) {
         this.forma = forma;
-        this.tamaño = tamaño;
-    }
-
-    public trastes(String color, double profundidad_cm, String resistencia) {
         this.color = color;
         this.profundidad_cm = profundidad_cm;
         this.resistencia = resistencia;
+        this.tamaño = tamaño;
+    }
+
+
+    public trastes(String color, double profundidad_cm) {
+        this.color = color;
+        this.profundidad_cm = profundidad_cm;
+      
     }
     
     
