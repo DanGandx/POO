@@ -7,22 +7,22 @@ package clases;
 
 
 public class ventana {
-    String ancho;
-    String alto;
+    double ancho;
+    double alto;
     String forma;
     String tela_cortina;
     String dureza_cristal;
  
     public ventana() { //constructor sin parámetros
-        ancho = "1.5 m";
-        alto = "1.5 m";
+        ancho = 1.5;
+        alto = 1.5 ;
         forma = "cuadrado";
         tela_cortina = "algodón";
         dureza_cristal = "duro";
 
     }
 
-    public ventana(String ancho, String alto, String forma, String tela_cortina, String dureza_cristal) {
+    public ventana(double ancho, double alto, String forma, String tela_cortina, String dureza_cristal) {
         this.ancho = ancho;
         this.alto = alto;
         this.forma = forma;
@@ -35,7 +35,9 @@ public class ventana {
         this.tela_cortina = tela_cortina;
     }
     
-    
+    public double getArea(){
+        return this.ancho * this.alto;
+    }
     
     
     public void abrirVentana(){

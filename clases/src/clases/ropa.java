@@ -17,6 +17,8 @@ public class ropa {
   String color;
   String textura;
   String temperatura;
+  double ancho = 40;
+  double alto = 30;
 
     public ropa() {
     talla = "M" ;
@@ -39,6 +41,9 @@ public class ropa {
         this.color = color;
     }
   
+    public double getPerimetro(){
+        return (2*this.ancho) + (2*this.alto);
+    }
     
   public void poner_ropa() {
       System.out.println("Te pusiste la ropa");

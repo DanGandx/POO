@@ -42,6 +42,9 @@ public class camas {
         this.colchon = colchon;
     }
      
+    public int getObjetosCama (){
+        return this.cobijas_cantidad + this.almohadas_cantidad;
+    }
         
   public void acostar_en_la_cama() {
       System.out.println("Te haz acostado");

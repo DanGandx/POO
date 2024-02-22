@@ -13,6 +13,8 @@ package clases;
 public class televisores {
     
   int pulgadas;
+  double ancho = 70.8;
+  double alto = 29.8;
   String resolución;
   String color_imagen;
   String sonido;
@@ -42,6 +44,10 @@ public class televisores {
     public televisores(int pulgadas, String resolución) {
         this.pulgadas = pulgadas;
         this.resolución = resolución;
+    }
+    
+    public double getArea(){
+        return this.ancho * this.alto;
     }
   
   public void encender_televisor() {

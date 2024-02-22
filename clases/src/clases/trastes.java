@@ -15,6 +15,7 @@ public class trastes {
     String forma;
     String color;
     double profundidad_cm;
+    double area = 314.16;
     String resistencia;
     String tamaño;
 
@@ -40,6 +41,10 @@ public class trastes {
         this.color = color;
         this.profundidad_cm = profundidad_cm;
       
+    }
+    
+    public double getVolumen(){
+        return this.area * this.profundidad_cm;
     }
     
     
